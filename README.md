@@ -5,13 +5,18 @@
 - `Pipeline`追加版.
 - 以下のページを参考に`CodeCommit`ではなく`GitHub`を採用.
   - [【AWS CDK Workshop】CDK PipelinesのセクションをCodeCommitではなくGitHubでやってみた](https://qiita.com/shimi7o/items/cf69aac8e4b5f2f1dd52)
-  - [Connection](https://ap-northeast-1.console.aws.amazon.com/codesuite/settings/connections?region=ap-northeast-1&connections-meta=eyJmIjp7InRleHQiOiIifSwicyI6e30sIm4iOjIwLCJpIjowfQ)からGitHubと接続する
-  - [CodeSuite](https://ap-northeast-1.console.aws.amazon.com/codesuite/settings)にアクセスして`ConnectionArn`を取得して環境変数に設定
-    - `export ConnectionArn="HOGE"`
-    - **注意**: この環境変数は`CodeBuild`時に設定されていないと意味がない.
-      `PipelineStack.cs`参照.
   - `cdk deploy`でデプロイ.
   - あとは`GitHub`にコミット.
+  - うまくいかない場合はパイプラインを確認する：`GitHub`とのアプリの接続確認設定を追加する.
+  - もう一度`GitHub`にコミットしてみる.
+
+### obsolete
+
+- [Connection](https://ap-northeast-1.console.aws.amazon.com/codesuite/settings/connections?region=ap-northeast-1&connections-meta=eyJmIjp7InRleHQiOiIifSwicyI6e30sIm4iOjIwLCJpIjowfQ)からGitHubと接続する
+- [CodeSuite](https://ap-northeast-1.console.aws.amazon.com/codesuite/settings)にアクセスして`ConnectionArn`を取得して環境変数に設定
+  - `export ConnectionArn="HOGE"`
+  - **注意**: この環境変数は`CodeBuild`時に設定されていないと意味がない.
+    `PipelineStack.cs`参照.
 
 ## original
 
