@@ -1,5 +1,7 @@
 # Welcome to your CDK C# project!
 
+パイプラインその3
+
 - `CDK`は`C#`で`API Gateway+Lambda+DynamoDB`を構成.
 - `Lambda`は`JavaScript`.
 - `Pipeline`追加版.
