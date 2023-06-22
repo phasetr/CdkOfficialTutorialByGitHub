@@ -18,7 +18,7 @@ public class WorkshopPipelineStack : Stack
         // CodeStarConnectionsからARNを取得する
         var codeStarConnection = new CfnConnection(this, "WorkshopGitHubCodeStarConnection", new CfnConnectionProps
         {
-            ConnectionName = "cdk-workshop-github-connection",
+            ConnectionName = "cdk-official-tutorial-by-github",
             ProviderType = "GitHub"
         });
         var connectionArn = codeStarConnection.AttrConnectionArn;
